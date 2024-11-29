@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+   
+    <title>14 Must Know Dev Tools Tricks</title>
+</head>
+<body>
+    
+<p onClick="makeGreen()">xBREAKxDOWNx</p>
+
+
+
+
+
+
+
+
+<script>
+     const dogs = [{name : "Snickers" , age : 2 } , { name : "Hugo" , age : "8"} , ];
+
+    function makeGreen(){
+    const p = $('p');
+    p.css({
+        "color":"#BADA55",
+        "font-size":"50px",
+    })
+    }
+
+    console.log("hello")
+    console.log('Hello I am a %s string !' , '😒')
+    console.log(' %c I am  some great text ' , 'font-size :50px')
+    console.log(' %c I am  some great text ' , 'font-size :50px ; background : red ; text-shadow :10px 10px 0 blue')
+     console.warn("OH NOOOO")
+     console.error(' what !')
+     console.info('any info you can add');
+      console.assert( 1 === 2 , 'you did not select the right Element !')
+    const p = document.querySelector("p");
+console.assert(p.classList.contains("ouch"), "That is wrong!");
+
+
+
+
+console.clear();
+console.log(p)
+console.dir(p)
+     
+
+console.clear();
+
+dogs.forEach(dog=>{
+    console.log(This is)
+})
+
+
+
+
+
+
+
+
+
+
+
+    
+</script>
+
+</body>
+</html>
