@@ -54,19 +54,45 @@ console.dir(p)
 console.clear();
 
 dogs.forEach(dog=>{
-    console.log(This is)
+
+    console.group(`${dog.name}`)
+    console.log(`This is ${dog.name}`)
+    console.log(`${dog.name} is ${dog.age} years old `)
+    console.groupEnd(`${dog.name}`)
+
+
 })
 
 
+console.count('wes')
+console.count('hala')
+console.count('wes')
+
+console.count('wes')
+console.count('wes')
+console.count('wes')
+console.count('wes')
+console.count('wes')
+console.count('wes')
+console.count('hala')
+console.count('wes')
+console.count('wes')
+console.count('hala')
+console.count('wes')
+console.count('wes')
 
 
 
+console.time('fetching data');
+fetch('https://github.com/halaabushehab ')
+.then(data => data.json())
+.then(data =>{
+    console.timeEnd('fetching data')
+    console.log(time)
+} )
 
 
-
-
-
-
+console.table(dog)
     
 </script>
 
